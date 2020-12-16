@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        
+
         createNotificationChannel();        //首先调用这个方法
 
         button.setOnClickListener(new View.OnClickListener() {
