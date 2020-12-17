@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //基于8.0以后打开通知首先要先获取IMPORTANCE_HIGH
+
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             CharSequence name = getString(R.string.app_name);
