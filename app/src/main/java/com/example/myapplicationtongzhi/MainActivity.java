@@ -4,6 +4,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT);
                 NotificationManagerCompat notificationManager = NotificationManagerCompat.from(MainActivity.this);
                 notificationManager.notify(s, builder.build());
+                Log.i("第三次", "onClick: ");
             }
         });
 
